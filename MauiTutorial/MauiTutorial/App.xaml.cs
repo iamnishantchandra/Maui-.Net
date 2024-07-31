@@ -16,6 +16,7 @@
             //MainPage = new StackPageDemo();
             //MainPage = new GridPageDemo();
             //MainPage = new AbsoluteLayoutDemo();
+            //MainPage = new FlexLayoutDemo();
             // Lact->5 -1 start 
             MainPage = new FlexLayoutDemo();
         }
