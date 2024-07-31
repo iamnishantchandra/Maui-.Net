@@ -1,0 +1,1 @@
+D:\.net MAUI\Maui\MauiTutorial\MauiTutorial\MauiTutorial.csproj;x64
