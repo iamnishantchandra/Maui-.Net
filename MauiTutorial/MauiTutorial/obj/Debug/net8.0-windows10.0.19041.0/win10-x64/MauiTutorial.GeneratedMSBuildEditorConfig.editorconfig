@@ -30,6 +30,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
+[D:/.net MAUI/Maui/MauiTutorial/MauiTutorial/CommandDemo.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.CommandDemo.xaml
+build_metadata.AdditionalFiles.TargetPath = CommandDemo.xaml
+build_metadata.AdditionalFiles.RelativePath = CommandDemo.xaml
+
 [D:/.net MAUI/Maui/MauiTutorial/MauiTutorial/DemoPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.DemoPage.xaml
@@ -54,11 +60,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.GridPageDemo.
 build_metadata.AdditionalFiles.TargetPath = GridPageDemo.xaml
 build_metadata.AdditionalFiles.RelativePath = GridPageDemo.xaml
 
+[D:/.net MAUI/Maui/MauiTutorial/MauiTutorial/InputControls.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.InputControls.xaml
+build_metadata.AdditionalFiles.TargetPath = InputControls.xaml
+build_metadata.AdditionalFiles.RelativePath = InputControls.xaml
+
 [D:/.net MAUI/Maui/MauiTutorial/MauiTutorial/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/.net MAUI/Maui/MauiTutorial/MauiTutorial/PresentationControl.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiTutorial.PresentationControl.xaml
+build_metadata.AdditionalFiles.TargetPath = PresentationControl.xaml
+build_metadata.AdditionalFiles.RelativePath = PresentationControl.xaml
 
 [D:/.net MAUI/Maui/MauiTutorial/MauiTutorial/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

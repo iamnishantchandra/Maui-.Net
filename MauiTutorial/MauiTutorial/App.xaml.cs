@@ -16,8 +16,11 @@
             //MainPage = new StackPageDemo();
             //MainPage = new GridPageDemo();
             //MainPage = new AbsoluteLayoutDemo();
-            // Lact->5 -1 start 
-            MainPage = new FlexLayoutDemo();
+            //MainPage = new FlexLayoutDemo();
+            //MainPage = new PresentationControl();
+            //MainPage = new CommandDemo();
+            // Lact->7 -1 start (6)
+            MainPage = new InputControls();
         }
     }
 }

@@ -11,6 +11,9 @@
     <MauiXaml Update="AbsoluteLayoutDemo.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="CommandDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="DemoPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
@@ -21,6 +24,12 @@
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="GridPageDemo.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="InputControls.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="PresentationControl.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="StackPageDemo.xaml">

@@ -1036,3 +1036,4 @@ D:\.net MAUI\Maui\MauiTutorial\MauiTutorial\obj\Debug\net8.0-android\stamp\_Conv
 D:\.net MAUI\Maui\MauiTutorial\MauiTutorial\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\.net MAUI\Maui\MauiTutorial\MauiTutorial\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\.net MAUI\Maui\MauiTutorial\MauiTutorial\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\.net MAUI\Maui\MauiTutorial\MauiTutorial\obj\Debug\net8.0-android\MauiTutorial.sourcelink.json
