@@ -18,5 +18,17 @@
                  Minimum="1"
                  Maximum="10"
                  Increment="1"/>
+        <Switch x:Name="Switch1"
+            IsToggled="True"
+                Toggled="Switch_HandlerChanged"/>
+        <DatePicker/>
+        <TimePicker/>
+        <Entry x:Name="UserTextName" Placeholder="Enter UsserName"
+               PlaceholderColor="Red"
+               IsPassword="True"
+               Keyboard="Numeric"
+               TextChanged="UserTextName_TextChanged"
+               Completed="UserTextName_Completed"/>
+        <Editor AutoSize="TextChanges" x:Name="UserTextEditor" Completed="UserTextEditor_Completed"/>
     </StackLayout>
 </ContentPage>
