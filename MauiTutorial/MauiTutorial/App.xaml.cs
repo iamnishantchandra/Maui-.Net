@@ -20,8 +20,9 @@
             //MainPage = new PresentationControl();
             //MainPage = new CommandDemo();
             //MainPage = new InputControls();
-            // Lact->8 -1 start (0)
-            MainPage = new CollectionControl();
+            //MainPage = new CollectionControl();
+            // Lact->9 -1 start (0)
+            MainPage = new ResourcesExample();
         }
     }
 }

@@ -57,6 +57,24 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\nishant_gif.gif" />
+	  <None Remove="Resources\Images\NishImgSamp.bmp" />
+	  <None Remove="Resources\Images\NishImgSamp.cr2" />
+	  <None Remove="Resources\Images\NishImgSamp.dds" />
+	  <None Remove="Resources\Images\NishImgSamp.dng" />
+	  <None Remove="Resources\Images\NishImgSamp.gif" />
+	  <None Remove="Resources\Images\NishImgSamp.hdr" />
+	  <None Remove="Resources\Images\NishImgSamp.heic" />
+	  <None Remove="Resources\Images\NishImgSamp.heif" />
+	  <None Remove="Resources\Images\NishImgSamp.ico" />
+	  <None Remove="Resources\Images\NishImgSamp.jpe" />
+	  <None Remove="Resources\Images\NishImgSamp.jpeg" />
+	  <None Remove="Resources\Images\NishImgSamp.jpg" />
+	  <None Remove="Resources\Images\NishImgSamp.svg" />
+	  <None Remove="Resources\Images\NishImgSamp.webp" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -94,6 +112,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PresentationControl.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ResourcesExample.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="StackPageDemo.xaml">
