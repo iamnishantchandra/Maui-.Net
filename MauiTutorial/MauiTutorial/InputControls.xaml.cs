@@ -27,7 +27,6 @@ public partial class InputControls : ContentPage
     {
         DisplayAlert("Switch_HandlerChanged Text", $"Your Switch { e.Value}", "Ok");
         
-
     }
 
     private void UserTextName_TextChanged(object sender, TextChangedEventArgs e)
