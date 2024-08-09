@@ -43,7 +43,13 @@ public partial class InputControls : ContentPage
     }
     private void UserTextEditor_Completed(object sender, EventArgs e)
     {
-        Debug.WriteLine(UserTextName.Text + UserTextEditor.Text);
+        Debug.WriteLine("UserTextName.Text" + UserTextEditor.Text);
         DisplayAlert("UserTextName Text", $"Your Switch {UserTextName.Text} and {UserTextEditor.Text}", "Ok");
+    }
+
+    private void UserDatePicker_DateSelected(object sender, DateChangedEventArgs e)
+    {
+        Debug.WriteLine(UserDatePicker);
+        DisplayAlert("UserDatePicker Text", $"Your Date {e.OldDate} Changed To {e.NewDate}", "Ok");
     }
 }

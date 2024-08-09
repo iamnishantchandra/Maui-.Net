@@ -19,7 +19,7 @@
             //MainPage = new FlexLayoutDemo();
             //MainPage = new PresentationControl();
             //MainPage = new CommandDemo();
-            // Lact->7 -1 start (6)
+            // Lact->8 -1 start (0)
             MainPage = new InputControls();
         }
     }

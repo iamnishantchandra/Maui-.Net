@@ -21,7 +21,7 @@
         <Switch x:Name="Switch1"
             IsToggled="True"
                 Toggled="Switch_HandlerChanged"/>
-        <DatePicker/>
+        <DatePicker x:Name="UserDatePicker" DateSelected="UserDatePicker_DateSelected"/>
         <TimePicker/>
         <Entry x:Name="UserTextName" Placeholder="Enter UsserName"
                PlaceholderColor="Red"
