@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTutorial.CollectionControl"
+             Title="CollectionControl">
+
+    <ScrollView>
+        <StackLayout>
+            
+            <CarouselView IndicatorView="Indicator1">
+                <CarouselView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                    <x:String>Andriod</x:String>
+                    <x:String>Windows</x:String>
+                    <x:String>Mac</x:String>
+                    <x:String>Unix</x:String>
+                    </x:Array>
+                </CarouselView.ItemsSource>
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame Margin="10"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   HeightRequest="200"
+                                   HasShadow="True"
+                                   CornerRadius="5"
+                                   BorderColor="Red">
+                                <Label Text="{Binding .}"/>
+                            </Frame>
+                        </StackLayout>
+
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <IndicatorView x:Name="Indicator1"
+                           HorizontalOptions="Center"
+                           IndicatorColor="LightGreen"
+                           SelectedIndicatorColor="DarkGreen"/>
+        
+            <ListView HasUnevenRows="True">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                    <x:String>Andriod</x:String>
+                    <x:String>Windows</x:String>
+                    <x:String>Mac</x:String>
+                    <x:String>Unix</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Frame Margin="10"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   HeightRequest="100"
+                                   HasShadow="True"
+                                   CornerRadius="5"
+                                   BorderColor="Red">
+                                    <Label Text="{Binding .}"/>
+                                </Frame>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        
+            <CollectionView>
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                    <x:String>Andriod</x:String>
+                    <x:String>Windows</x:String>
+                    <x:String>Mac</x:String>
+                    <x:String>Unix</x:String>
+                    </x:Array>
+                </CollectionView.ItemsSource>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Frame Margin="10"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   HeightRequest="100"
+                                   HasShadow="True"
+                                   CornerRadius="5"
+                                   BorderColor="Blue">
+                                <Label Text="{Binding .}"/>
+                            </Frame>
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        
+            <Picker>
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Andriod</x:String>
+                        <x:String>Windows</x:String>
+                        <x:String>Mac</x:String>
+                        <x:String>Unix</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="First">
+                        <TextCell Text="First Text Cell" Detail="Details of First Text Cell."/>
+                        <EntryCell Text="First Entry Cell" Label="Entry Label"/>
+                        <SwitchCell Text="Table Entry"/>
+                        <ImageCell Text="Donet Maui First Image" Detail="About Donet Maui Image"
+                                   ImageSource="dotnet_bot.svg"/>
+                    </TableSection>
+                    <TableSection Title="Second">
+                        <TextCell Text="Second Text Cell" Detail="Details of Second Text Cell."/>
+                        <EntryCell Text="Second Entry Cell" Label="Entry Label"/>
+                        <SwitchCell Text="Table Entry"/>
+                        <ImageCell Text="Donet Maui Second Image" Detail="About Donet Maui Image"
+                                   ImageSource="dotnet_bot.svg"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        
+        
+        
+        
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
