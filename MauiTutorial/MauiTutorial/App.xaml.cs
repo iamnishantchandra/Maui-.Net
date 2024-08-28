@@ -21,8 +21,9 @@
             //MainPage = new CommandDemo();
             //MainPage = new InputControls();
             //MainPage = new CollectionControl();
-            // Lact->9 -1 start (0)
-            MainPage = new ResourcesExample();
+            //MainPage = new ResourcesExample();
+            MainPage = new DataBinding();
+            // Lact->11 -1 start (0)
         }
     }
 }

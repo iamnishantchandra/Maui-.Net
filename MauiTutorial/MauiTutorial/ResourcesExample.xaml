@@ -3,7 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiTutorial.ResourcesExample"
              Title="ResourcesExample">
-    <StackLayout>
-        <Image Source="nishant_gif.gif"  IsAnimationPlaying="True"/>
+        <!--<Image Source="nishant_gif"  IsAnimationPlaying="True" />-->
+    <StackLayout BackgroundColor="Red">
+        <Image Source="nish_sample12.svg" />
+        <Label HorizontalOptions="Center" VerticalOptions="Center" Text="Hello Donet MAUI" 
+               FontFamily="Pacifico.ttf"
+               FontAttributes="Bold,Italic"
+               FontSize="30"/>
+        <Image>
+            <Image.Source>
+                <FontImageSource FontFamily="Icons" Glyph="&#xE800;" Size="30"/>
+            </Image.Source>
+        </Image>
     </StackLayout>
 </ContentPage>

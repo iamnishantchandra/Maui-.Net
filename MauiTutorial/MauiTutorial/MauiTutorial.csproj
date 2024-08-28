@@ -48,6 +48,7 @@
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
+    <MauiImage Update="Resources\Images\nish_sample12.svg" Resize="True" BaseSize="100,100" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -57,26 +58,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\fontello.ttf" />
+	  <None Remove="Resources\Fonts\Matemasie-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Pacifico-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Pacifico.ttf" />
 	  <None Remove="Resources\Images\nishant_gif.gif" />
-	  <None Remove="Resources\Images\NishImgSamp.bmp" />
-	  <None Remove="Resources\Images\NishImgSamp.cr2" />
-	  <None Remove="Resources\Images\NishImgSamp.dds" />
-	  <None Remove="Resources\Images\NishImgSamp.dng" />
-	  <None Remove="Resources\Images\NishImgSamp.gif" />
-	  <None Remove="Resources\Images\NishImgSamp.hdr" />
-	  <None Remove="Resources\Images\NishImgSamp.heic" />
-	  <None Remove="Resources\Images\NishImgSamp.heif" />
-	  <None Remove="Resources\Images\NishImgSamp.ico" />
-	  <None Remove="Resources\Images\NishImgSamp.jpe" />
-	  <None Remove="Resources\Images\NishImgSamp.jpeg" />
-	  <None Remove="Resources\Images\NishImgSamp.jpg" />
-	  <None Remove="Resources\Images\NishImgSamp.svg" />
-	  <None Remove="Resources\Images\NishImgSamp.webp" />
+	  <None Remove="Resources\Images\nish_sample.bmp" />
+	  <None Remove="Resources\Images\nish_sample1.cr2" />
+	  <None Remove="Resources\Images\nish_sample10.jpeg" />
+	  <None Remove="Resources\Images\nish_sample11.jpg" />
+	  <None Remove="Resources\Images\nish_sample12.svg" />
+	  <None Remove="Resources\Images\nish_sample13.webp" />
+	  <None Remove="Resources\Images\nish_sample2.dds" />
+	  <None Remove="Resources\Images\nish_sample3.dng" />
+	  <None Remove="Resources\Images\nish_sample4.gif" />
+	  <None Remove="Resources\Images\nish_sample5.hdr" />
+	  <None Remove="Resources\Images\nish_sample6.heic" />
+	  <None Remove="Resources\Images\nish_sample7.heif" />
+	  <None Remove="Resources\Images\nish_sample8.ico" />
+	  <None Remove="Resources\Images\nish_sample9.jpe" />
+	  <None Remove="Resources\Images\nish_samplegif.gif" />
+	  <None Remove="Resources\Raw\Employee.json" />
 	</ItemGroup>
 
+	
 	<ItemGroup>
-		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
-		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.80" />
+		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.80" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
@@ -91,6 +99,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="CommandDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="DataBinding.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="DemoPage.xaml">
