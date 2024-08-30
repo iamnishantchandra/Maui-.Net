@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTutorial.MVVM.Views.CommandExample"
+             Title="CommandExample">
+        <!--<SearchBar Text="{Binding searchCommand}"
+                   SearchCommand="{Binding CommandSearch}"/>-->
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Button Text="Click TO Command"
+                Command="{Binding CommandClick}"/>
+        <SearchBar x:Name="search1"
+                   SearchCommand="{Binding CommandSearch}"
+                   SearchCommandParameter="{Binding Source={x:Reference search1},Path=Text}" />
+        <Entry Placeholder="Enter First Number" Text="{Binding First}"/>
+        <Entry Placeholder="Enter Second Number" Text="{Binding Second}"/>
+        <Entry Placeholder="Result" Text="{Binding Result}"/>
+        <Button  Text="Calculate" Command="{Binding ResultCommand}"/>
+        
+    </StackLayout>
+</ContentPage>

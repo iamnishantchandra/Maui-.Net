@@ -31,8 +31,9 @@ namespace MauiTutorial
             //MainPage = new ProductPage();
             //MainPage = new BindCollectionView();//14
             //MainPage = new ConverterExample();//15
-            MainPage = new ConverterExample();
-            //Lact->16 -1 S (0)
+            //MainPage = new CommandExample();//16
+            MainPage = new CommandExample();//AddINotifyPropertyChangedInterface 17
+            //Lact->18 -1 S (0)
         }
     }
 }
