@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTutorial.MVVM.Views.BindCollectionView"
+             Title="BindCollectionView">
+    <StackLayout>
+        <CollectionView ItemsSource="{Binding ProductView}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame Margin="10"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   HeightRequest="100"
+                                   HasShadow="True"
+                                   CornerRadius="5"
+                                   BorderColor="Blue">
+                            <Label Text="{Binding Title}"/>
+                            <!--<Entry Text="{Binding Weight}"/>
+                            <Slider Value="{Binding AvailQty}" Minimum="0" Maximum="20"/>-->
+   
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

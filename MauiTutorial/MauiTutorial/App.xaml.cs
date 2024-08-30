@@ -1,11 +1,14 @@
-﻿namespace MauiTutorial
+﻿using MauiTutorial.MVVM.Views;
+
+namespace MauiTutorial
 {
     public partial class App : Application
     {
         public App()
         {
-            InitializeComponent();
+            //13 lact-> MVVM
 
+            InitializeComponent();
             MainPage = new MainPage();
             //var NavPage = new NavigationPage(new MainPage());
             //NavPage.BarBackground = Colors.Green;
@@ -22,8 +25,14 @@
             //MainPage = new InputControls();
             //MainPage = new CollectionControl();
             //MainPage = new ResourcesExample();
-            MainPage = new DataBinding();
-            // Lact->11 -1 start (0)
+            //MainPage = new DataBinding();
+            //MainPage = new ModesExample();
+            //MainPage = new INotifyChanged();
+            //MainPage = new ProductPage();
+            //MainPage = new BindCollectionView();//14
+            //MainPage = new ConverterExample();//15
+            MainPage = new ConverterExample();
+            //Lact->16 -1 S (0)
         }
     }
 }

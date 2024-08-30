@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTutorial.MVVM.Views.ProductPage"
+             Title="ProductPage">
+    <StackLayout 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center">
+        <Label 
+            Text="{Binding Product.Title}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="40" />
+        <Label 
+            Text="{Binding Product.Description}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" FontSize="30" />
+        <Switch IsToggled="{Binding Product.IsPopuplar}"/>
+        <Entry Text="{Binding Product.Weight}"/>
+        <Slider Value="{Binding Product.AvailQty}" Minimum="0" Maximum="20"/>
+        <DatePicker Date="{Binding Product.CreatedDate}"/>
+        
+        
+    </StackLayout>
+</ContentPage>
