@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiTutorial.MVVM.Views.ClothPage"
+             Title="ClothPage"
+             xmlns:DataTemplates="clr-namespace:MauiTutorial.Selectors">
+    <ContentPage.Resources>
+        <DataTemplates:ClothDataTemplateSelector x:Key="clothResource"/>
+    </ContentPage.Resources>
+    <RefreshView Command="{Binding RefreshCommand}"
+                 IsRefreshing="{Binding IsRefresh}">
+        <CollectionView ItemsSource="{Binding Products}"
+                        ItemTemplate="{StaticResource clothResource}"
+                        RemainingItemsThreshold="1"
+                        RemainingItemsThresholdReachedCommand="{Binding ReachedCommand}">
+
+        </CollectionView>
+    </RefreshView>
+</ContentPage>

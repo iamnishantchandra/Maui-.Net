@@ -31,9 +31,13 @@ namespace MauiTutorial
             //MainPage = new ProductPage();
             //MainPage = new BindCollectionView();//14
             //MainPage = new ConverterExample();//15
-            //MainPage = new CommandExample();//16
-            MainPage = new CommandExample();//AddINotifyPropertyChangedInterface 17
-            //Lact->18 -1 S (0)
+            //MainPage = new CommandExample();//16//AddINotifyPropertyChangedInterface 17
+            //MainPage = new NavigationPage(new FirstPage());//18 
+            //MainPage = new ClothPage_o();//19 //Collection View  DataTemplate Grid
+            MainPage = new ClothPage();//20,21// ResourceDictionary -> Selector Class ResourceDictionary-> Condition Based Row Design //22-> Refresh and Paging
+
+            //Lact->22 -1 S (0)
+
         }
     }
 }
